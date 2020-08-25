@@ -3,19 +3,6 @@
 
 
 */
-<?
-	if($frm['year']){
-		//取出全問卷
-		$sql_select = "SELECT * FROM `$CFG->table_name_question` WHERE `status`='1' AND `year`='".$frm['year']."'";
-		$db_select = db_query($sql_select);
-	}else{
-		$frm['year'] = date("Y",strtotime($CFG->now));
-		//取出全問卷
-		$sql_select = "SELECT * FROM `$CFG->table_name_question` WHERE `status`='1' AND `year`='".$frm['year']."'";
-		$db_select = db_query($sql_select);
-	}
-
-?>
 
 請選年份</br>
 	<select name='year' onchange="location='http://hms.web.vcom.tw/elderly/index.php?mode=import&year='+this.options[this.selectedIndex].value">
