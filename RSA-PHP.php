@@ -108,8 +108,7 @@ gMuLahTWMXsgXq6/nClzliFOspSQoyRpWZRhCd5Motq4WZjwgb56tx8zSabLcstb
 
 
 $rsa = new Rsa();
-//echo "公钥：".$rsa->publicKey."<BR>";
-//echo "私钥：".$rsa->privateKey."<BR>";
+
 
 $rs	=	array(
 			"data"=null
@@ -117,24 +116,24 @@ $rs	=	array(
 $rs = json_encode($rs);
 
 
-// 使用公钥加密
+// 公鑰加密
 $str = $rsa->publicEncrypt($rs, $rsa->publicKey);
-// 这里使用base64是为了不出现乱码，默认加密出来的值有乱码
 
-echo "公钥加密（base64处理过）：\n", $str, "\n <BR>";
+
+echo "公鑰加密（base64）：\n", $str, "\n <BR>";
 	
 $privstr = $rsa->privateDecrypt($str, $rsa->privateKey);
 
-echo "私钥解密：\n", $privstr, "\n <BR>";
+echo "私鑰解密：\n", $privstr, "\n <BR>";
 
-// 使用私钥加密
+// 私鑰加密
 $str = $rsa->privateEncrypt($rs, $rsa->privateKey);
-// 这里使用base64是为了不出现乱码，默认加密出来的值有乱码
 
-echo "私钥加密（base64处理过）：\n", $str, "\n <BR>";
+
+echo "私鑰加密（base64）：\n", $str, "\n <BR>";
 
 $pubstr = $rsa->publicDecrypt($str, $rsa->publicKey);
-echo "公钥解密：\n", $pubstr, "\n <BR>";
+echo "公鑰解密：\n", $pubstr, "\n <BR>";
 
 
 ?>
