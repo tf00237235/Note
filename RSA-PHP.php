@@ -1,27 +1,5 @@
 <?	
-/*
-	include_once("../libraries/applet.php");
-	include_once("../libraries/shield.php");     // 資訊安全函式
-	
-	$trust_ip = array('117.56.53.123','163.29.150.70','123.51.187.208');
-	
-	if (in_array($_SERVER['REMOTE_ADDR'],$trust_ip)) {
-		
-		
-		
-		//	顯示檢查結果
-		$rs	=	array(
-					'result'=>$result,
-					'msg'=>$msg
-				);
-			
-		echo json_encode($rs);
-	}
-	
-function Kaesar($data){
-	
-}
-*/
+
 class Rsa
 {
 	
@@ -134,57 +112,7 @@ $rsa = new Rsa();
 //echo "私钥：".$rsa->privateKey."<BR>";
 
 $rs	=	array(
-			"篩檢編號"=> "2014315143387",
-			"篩檢日期"=> "2014/09/30",
-			"PID"=> "F200555115",
-			"Name"=> "黃美純",
-			"BirY"=> "033",
-			"BirM"=> "03",
-			"BirD"=> "27",
-			"身高"=> "147.5",
-			"體重"=> "69.2",
-			"脈搏"=> "80",
-			"收縮壓"=> "141",
-			"舒張壓"=> "88",
-			"腰圍"=> "91",
-			"尿蛋白質定性"=> "10.2",
-			"血糖"=> "88",
-			"總膽固醇"=> "157",
-			"三酸甘油酯"=> "171",
-			"高密度脂蛋白膽固醇"=> "35",
-			"低密度脂蛋白膽固醇"=> "88",
-			"AST(GOT)"=> "28",
-			"ALT(GPT)"=> "35",
-			"肌酸酐"=> "0.67",
-			"B型肝炎表面抗原(HBsAg)"=> null,
-			"C型肝炎抗體(Anti-HCV)"=> null,
-			"Question1"=> null,
-			"Question2"=> null,
-			"Question3"=> null,
-			"Question4"=> null,
-			"Question5"=> null,
-			"Question9_1"=> null,
-			"Question9_2"=> null,
-			"Error"=> null,
-			"MNAQuestioin1"=> null,
-			"MNAQuestioin2"=> null,
-			"MNAQuestioin3"=> null,
-			"MNAQuestioin4"=> null,
-			"MNAQuestioin5"=> null,
-			"MNAQuestioin6"=> null,
-			"MNAQuestioin7"=> null,
-			"MNAQuestioin8"=> null,
-			"MNAQuestioin9"=> null,
-			"MNAQuestioin10"=> null,
-			"MNAQuestioin11"=> null,
-			"MNAQuestioin12"=> null,
-			"MNAQuestioin13"=> null,
-			"MNAQuestioin14"=> null,
-			"MNAQuestioin15"=> null,
-			"MNAQuestioin16"=> null,
-			"MNAQuestioin17"=> null,
-			"MNAQuestioin18"=> null,
-			"MNAError"=> null
+			"data"=null
 		);
 $rs = json_encode($rs);
 
