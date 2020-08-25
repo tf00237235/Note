@@ -1,0 +1,1 @@
+onkeyup="if(value.match(/^\d{3}$/))value="/value.replace(value,parseInt(value/10))";value="/value.replace(/\.\d*\./g,¡¦."¡¦)" onKeyPress="if((event.keyCode<48|| event.keyCode>57) && event.keyCode!=46 && event.keyCode!=45 || value.match(/^\d{3}$/) || /\.\d{3}$/.test(value)){event.returnValue=false}"
